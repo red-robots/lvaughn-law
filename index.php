@@ -12,21 +12,58 @@
  * @package ACStarter
  */
 
-get_header(); ?>
+get_header(); 
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+$wp_query = new WP_Query(array('post_status'=>'private','pagename'=>'homepage'));
+	if ( have_posts() ) : the_post(); 
 
-		<?php
-			/* Start the Loop */
-			$wp_query = new WP_Query(array('post_status'=>'private','pagename'=>'homepage'));
-			if ( have_posts() ) : the_post(); 
-				get_template_part( 'template-parts/content', 'index' );
-			endif; ?>
+	get_template_part('inc/banner');
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
+	$mainTagline = get_field('main_tagline');
+	$subText = get_field('sub-text_tagline');
+	$intro = get_field('overview_introduction');
+	$overview = get_field('overview_');
+
+	// echo '<pre>';
+	// print_r($banner);
+	// echo '</pre>';
+
+?>
+	<section class="home text">
+		<div class="homewrap">
+			<?php if( $mainTagline ) { ?>
+				<h2><?php echo $mainTagline; ?></h2>
+			<?php } ?>
+			<?php if( $subText ) { ?>
+				<h3><?php echo $subText; ?></h3>
+			<?php } ?>
+			<?php if( $intro ) { ?>
+				<p><?php echo $intro; ?></p>
+			<?php } ?>
+
+			<?php if(have_rows('service_areas')) : ?>
+				<section class="home-service-area">
+					<ul>
+				<?php while(have_rows('service_areas')) : the_row();
+					$bullet = get_sub_field('practice_area_bullet_points');
+
+			 ?>			<li><i class="fas fa-check-circle"></i> <?php echo $bullet; ?></li>
+
+				<?php endwhile; ?>
+					</ul>
+				</section>
+			<?php endif; ?>
+			<?php if( $overview ) { ?>
+				<p class="overview"><?php echo $overview; ?></p>
+			<?php } ?>
+		</div>
+	</section>
+
+<?php endif;
+
+?>
+
+
 
 <?php
-get_sidebar();
 get_footer();

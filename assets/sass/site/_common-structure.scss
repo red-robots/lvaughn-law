@@ -1,20 +1,10 @@
-* { -webkit-hyphens: none; }
-div {
-	/* These are technically the same, but use both */
-	overflow-wrap: break-word;
-	word-wrap: break-word;
+body {
+	font-family: $font-copy;
 
-	-ms-word-break: break-all;
-	/* This is the dangerous one in WebKit, as it breaks things wherever */
-	word-break: break-all;
-	/* Instead use this non-standard one: */
-	word-break: break-word;
-
-	/* Adds a hyphen where the word breaks, if supported (No Blink) */
-	-ms-hyphens: auto;
-	-moz-hyphens: auto;
-	-webkit-hyphens: auto;
-	hyphens: auto;
+}
+.text {
+	line-height: 1.8;
+	font-size: 20px;
 }
 .clear {clear: both;}
 .wrapper {
@@ -26,7 +16,7 @@ div {
 		width: 100%;
 	}
 	@media screen and (min-width: $deskwidth) {
-		width: 1200px;
+		width: 80%;
 		padding: 0px;
 	}
 }
@@ -61,32 +51,44 @@ div {
 
 /* Logo */
 .logo , h1.logo {
-	width: 300px;
-	height: 200px;
-	background-image: url(images/logo.png);	
+	width: 200px;
 	margin: 10px auto;
 
 	@media screen and (min-width: $tabwidth) {
-		width: 300px;
-		height: 200px;
+		width: 200px;
 		float: left;
 		margin: 0;
 	}
 	@media screen and (min-width: $deskwidth) {
-		/*width: 1200px;*/
+		
 	}
 }
 .logo a, h1.logo a {
-	width: 300px;
-	height: 200px;
+	width: 100%;
 	display: block;
-	text-indent: -9000px;
 
 	@media screen and (min-width: $tabwidth) {
-		width: 300px;
-		height: 200px;
+		
 	}
 	@media screen and (min-width: $deskwidth) {
-		/*width: 1200px;*/
+		
+	}
+}
+header#masthead {
+	width: 100%;
+	padding: 10px 0;
+	background-color: #fff;
+	float: left;
+}
+.site-footer {
+	width: 100%;
+	clear: both;
+	padding: 40px 0;
+	background-color: $color-purple;
+	color: #fff;
+	text-align: center;
+	a {
+		text-decoration: none;
+		color: #fff;
 	}
 }

@@ -16,7 +16,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Fjalla+One|Muli:300,400,600" rel="stylesheet">
 
 <script defer src="<?php bloginfo( 'template_url' ); ?>/assets/svg-with-js/js/fontawesome-all.js"></script>
 
@@ -33,11 +33,15 @@
 			
 			<?php if(is_home()) { ?>
 	            <h1 class="logo">
-	            <a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a>
+	            <a href="<?php bloginfo('url'); ?>">
+	            	<img src="<?php bloginfo('template_url'); ?>/images/logo.png" alt="<?php bloginfo('name'); ?>" >
+	            </a>
 	            </h1>
 	        <?php } else { ?>
 	            <div class="logo">
-	            <a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a>
+	            <a href="<?php bloginfo('url'); ?>">
+	            	<img src="<?php bloginfo('template_url'); ?>/images/logo.png" alt="<?php bloginfo('name'); ?>" >
+	            </a>
 	            </div>
 	        <?php } ?>
 
@@ -48,4 +52,4 @@
 	</div><!-- wrapper -->
 	</header><!-- #masthead -->
 
-	<div id="content" class="site-content wrapper">
+	<div id="content" class="site-content">

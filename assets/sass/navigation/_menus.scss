@@ -4,10 +4,11 @@
 	text-align: center;
 	width: 100%;
 	background-color: #fff;
+	font-family: $font-heading;
 	@media screen and (min-width: $tabwidth) {
 		clear: none;
 		width: auto;
-		
+		float: right;
 
 	}
 	@media screen and (min-width: $deskwidth) {
@@ -85,9 +86,11 @@
 		font-family: $font-heading;
 		font-weight: 300;
 		width: 100%;
+		font-size: 20px;
 		@media screen and (min-width: $tabwidth) {
-			border-left: 1px solid #000;
-			line-height: 3;
+			// border-left: 1px solid #000;
+			line-height: 5;
+			font-size: 30px;
 			width: auto;
 			// padding: 0 20px;
 			&:first-of-type {
@@ -95,7 +98,7 @@
 			}
 		}
 		@media screen and (min-width: $deskwidth) {
-			// padding: 0 30px;
+			font-size: 30px;
 		}
 
 		&:hover > a,
@@ -107,7 +110,7 @@
 		// align-items: center;
 		text-decoration: none;
 		padding: 10px 0px;
-		color: #fff;
+		color: $color-purple;
 		@include transition(all ease .4s);
 		@media screen and (min-width: $tabwidth) {
 			padding: 0% 20px;
@@ -146,6 +149,7 @@
 	}
 	.main-navigation ul {
 		// display: block;
+		
 	}
 }
 button.menu-toggle {
@@ -169,7 +173,13 @@ button.menu-toggle {
 		display: none;
 	}
 }
-
+.main-navigation .menu-primary-menu-container {
+	max-height: 0;
+	@include transition(all ease 1s);
+}
+.main-navigation.toggled .menu-primary-menu-container {
+	max-height: 1000px;
+}
 .comment-navigation,
 .posts-navigation,
 .post-navigation {
