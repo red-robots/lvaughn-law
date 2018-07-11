@@ -15,10 +15,14 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="wrapper">
+
+
+			<nav class="footer">
+				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+			</nav>
+
 			<div class="site-info">
-				<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'acstarter' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'acstarter' ), 'WordPress' ); ?></a>
-				<span class="sep"> | </span>
-				<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'acstarter' ), 'acstarter', '<a href="http://underscores.me/" rel="designer">Underscores.me</a>' ); ?>
+				&copy;<?php date('Y'); ?> Lisa F. Vaughn | All Rights Reserved. Site by <a href="https://bellaworksweb.com" target="_blank">BW</a>
 			</div><!-- .site-info -->
 	</div><!-- wrapper -->
 	</footer><!-- #colophon -->

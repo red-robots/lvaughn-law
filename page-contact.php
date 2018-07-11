@@ -52,7 +52,7 @@ get_template_part('inc/banner');
 			<section class="contact-form">
 				<h2>Inquiries:</h2>
 				<div class="the-form">
-					
+					<?php the_content(); ?>
 				</div>
 			</section>
 

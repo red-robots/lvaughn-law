@@ -1631,7 +1631,7 @@ body,button,input,select,textarea{color:#404040;font-family:sans-serif;font-size
 h1,h2,h3,h4,h5,h6{clear:both;font-family:"Fjalla One",sans-serif}
 .entry-content h1{font-size:30px}
 h1.title{font-size:40px;width:100%;text-align:center;margin:40px 0 80px 0}
-p{margin-bottom:1.5em}
+p{margin:0 0 1.5em 0}
 dfn,cite,em,i{font-style:italic}
 blockquote{margin:0 1.5em}
 address{margin:0 0 1.5em}
@@ -1695,6 +1695,9 @@ a:hover,a:active{outline:0}
 .site-main .comment-navigation,.site-main .posts-navigation,.site-main .post-navigation{margin:0 0 1.5em;overflow:hidden}
 .comment-navigation .nav-previous,.posts-navigation .nav-previous,.post-navigation .nav-previous{float:left;width:50%}
 .comment-navigation .nav-next,.posts-navigation .nav-next,.post-navigation .nav-next{float:right;text-align:right;width:50%}
+nav.footer{width:100%;text-align:center}
+nav.footer ul{margin:0 0 30px 0;padding:0}
+nav.footer li{display:inline-block;text-transform:uppercase;font-size:16px;margin:0 20px}
 .navigation{width:100%;margin:20px 0 30px 0;clear:both;float:left}
 .navigation ul{margin:0;padding:0}
 .navigation li{margin:0;display:inline;list-style:none}
@@ -1789,7 +1792,7 @@ html[xmlns] .flexslider .slides{display:block}
 .flex-direction-nav .flex-next{opacity:1;right:10px}
 }.widget{margin:0 0 1.5em}
 .widget select{max-width:100%}
-body{font-family:"Muli",sans-serif}
+body{font-family:"Muli",sans-serif;color:#292231}
 .text{line-height:1.8;font-size:20px}
 .clear{clear:both}
 .wrapper{width:100%;margin:0 auto;padding:20px}
@@ -1807,23 +1810,24 @@ body{font-family:"Muli",sans-serif}
 header#masthead{width:100%;padding:10px 0;background-color:#fff;float:left}
 .site-footer{width:100%;clear:both;padding:40px 0;background-color:#292231;color:#fff;text-align:center}
 .site-footer a{text-decoration:none;color:#fff}
+.gform_wrapper .gform_footer input.button,.gform_wrapper .gform_footer input[type=image],.gform_wrapper .gform_footer input[type=submit]{padding:20px 50px;background-color:#292231;color:#fff;box-shadow:none;text-shadow:none;border-radius:0;border:0;text-transform:uppercase;font-size:30px}
 .sticky{display:block}
 .hentry{margin:0 0 1.5em}
 .byline,.updated:not(.published){display:none}
 .single .byline,.group-blog .byline{display:inline}
 .page-content,.entry-content,.entry-summary{margin:1.5em 0 0}
 .page-links{clear:both;margin:0 0 1.5em}
-section.home{width:100%;float:left}
+section.home{width:100%;float:left;font-size:22px}
 section.home h2,section.home h3{width:100%;text-align:center}
-section.home h2{font-size:40px}
+section.home h2{font-size:40px;margin:60px 0 30px 0}
 @media screen and (min-width:720px){section.home h2{font-size:40px}
-}@media screen and (min-width:1200px){section.home h2{font-size:40px}
-}section.home h3{font-size:20px}
+}@media screen and (min-width:1200px){section.home h2{font-size:50px}
+}section.home h3{font-size:20px;margin:0 0 50px 0}
 @media screen and (min-width:720px){section.home h3{font-size:20px}
 }@media screen and (min-width:1200px){section.home h3{font-size:20px}
-}section.home p.overview{text-align:justify}
+}section.home p.overview{text-align:justify;text-justify:inter-word;overflow:hidden}
 section.home ul{padding:0;margin:0 0 20px 30px}
-section.home ul li{list-style-type:none}
+section.home ul li{margin:0 0 15px 0}
 section.home i{font-size:20px}
 section.home .homewrap{width:90%;margin:0 auto}
 @media screen and (min-width:720px){section.home .homewrap{width:90%}
@@ -1831,8 +1835,8 @@ section.home .homewrap{width:90%;margin:0 auto}
 }section.about{width:90%;margin:0 auto 30px auto}
 @media screen and (min-width:720px){section.about{width:54%;float:right}
 }section.proof{width:90%;margin:30px auto;border-bottom:6px solid #ddd}
-@media screen and (min-width:720px){section.proof{width:35%;float:left}
-}section.proof .prof-recog{width:100%;float:left;background-color:#fff;border-bottom:4px solid #ddd;padding:5%}
+@media screen and (min-width:720px){section.proof{width:35%;float:left;margin:0 0 30px 0}
+}section.proof .prof-recog{width:100%;float:left;background-color:#fff;border-bottom:4px solid #ddd;padding:10%}
 section.proof .prof-recog ul{margin:0;padding:0}
 section.proof .prof-recog li{list-style:none;margin:0 0 15px 0}
 section.practice-areas{width:90%;margin:30px auto}

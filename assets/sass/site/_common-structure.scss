@@ -1,6 +1,6 @@
 body {
 	font-family: $font-copy;
-
+	color: $color-purple;
 }
 .text {
 	line-height: 1.8;
@@ -92,3 +92,19 @@ header#masthead {
 		color: #fff;
 	}
 }
+.gform_wrapper .gform_footer input.button, .gform_wrapper .gform_footer input[type=image], .gform_wrapper .gform_footer input[type=submit] {
+	padding: 20px 50px;
+	background-color: $color-purple;
+	color: #fff;
+	box-shadow: none;
+	text-shadow: none;
+	border-radius: 0;
+	border: 0;
+	text-transform: uppercase;
+	font-size: 30px;
+}
+
+
+
+
+
