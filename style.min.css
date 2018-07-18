@@ -1811,6 +1811,7 @@ header#masthead{width:100%;padding:10px 0;background-color:#fff;float:left}
 .site-footer{width:100%;clear:both;padding:40px 0;background-color:#292231;color:#fff;text-align:center}
 .site-footer a{text-decoration:none;color:#fff}
 .gform_wrapper .gform_footer input.button,.gform_wrapper .gform_footer input[type=image],.gform_wrapper .gform_footer input[type=submit]{padding:20px 50px;background-color:#292231;color:#fff;box-shadow:none;text-shadow:none;border-radius:0;border:0;text-transform:uppercase;font-size:30px}
+.home-service-area a{color:#115b8a;text-decoration:none}
 .sticky{display:block}
 .hentry{margin:0 0 1.5em}
 .byline,.updated:not(.published){display:none}
