@@ -22,11 +22,16 @@ get_template_part('inc/banner');
 			));
 				if ($wp_query->have_posts()) : ?>
 				<section class="practice-areas">
-			    <?php while ($wp_query->have_posts()) : ?>
-			        
-			    <?php $wp_query->the_post(); ?>	
+			    <?php while ($wp_query->have_posts()) : 
 
-				    <div class="block">
+			   $wp_query->the_post(); 
+				     $ptitle = get_the_title();
+				    // echo $title;
+				    $theid = sanitize_title_with_dashes($ptitle);
+			    ?>	
+
+
+				    <div class="block" id="<?php echo $theid; ?>">
 				    	<h2><?php the_title(); ?></h2>
 				    	<?php the_content(); ?>
 				    </div>

@@ -47,10 +47,13 @@ $wp_query = new WP_Query(array('post_status'=>'private','pagename'=>'homepage'))
 				<?php while(have_rows('service_areas')) : the_row();
 					$bullet = get_sub_field('practice_area_bullet_points');
 					$link = get_sub_field('link');
+					$title = get_the_title($link);
+			   		 // echo $title;
+			   	 	$theid = sanitize_title_with_dashes($title);
 
 			 ?>			<!-- <li><i class="fas fa-check-circle"></i> <?php echo $bullet; ?></li>-->
 			 			<li>
-			 				<a href="<?php echo $link; ?>"><?php echo $bullet; ?></a>
+			 				<a href="<?php echo get_bloginfo('url') . '/practice-areas/#'.$theid; ?>"><?php echo $bullet; ?></a>
 			 			</li> 
 
 				<?php endwhile; ?>
